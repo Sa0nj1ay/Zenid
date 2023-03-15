@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/whyus.js" defer></script>
+    <script src="components/contactus.js" defer></script>
+    <title>Career</title>
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <section class="apply_section">
+      <div class="container">
+        <h2 class="heading">Careers at Zenid Infotech</h2>
+        <div class="job_info">
+            <p><span>Location :</span> Phase 8B, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 160055</p>
+            <p><span>Experience :</span> 0-1 Year</p>
+            <p><span>No. of Vacancies :</span> 2</p>
+        </div>
+        <div class="apply_for_job">
+          <button class="button_animate" data-bs-toggle="modal" data-bs-target="#exampleModal" >Apply</button>
+        </div>
+        <div class="details_and_role">
+          <div class="job_discription">
+            <div class="discription_img">
+              <img src="image/description.png">
+            </div>
+            <div class="discription">
+              <p>Job Description / Responsibilities</p>
+              <ul>
+                <li>Produce minimal and clean code with more reusability and review/fix code by other developers in the team.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job_discription">
+            <div class="discription_img">
+              <img src="image/candidates.png">
+            </div>
+            <div class="discription">
+              <p>Eligibility Criteria</p>
+              <ul>
+                <li>MCA, BE/B.TECH, BCA, BSC IT or Equivalent, Any Diploma in CS</li>
+                <li>0-1 years working as a full-time professional MERN Stack Developer / Internship</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job_discription">
+            <div class="discription_img">
+              <img src="image/skills.png">
+            </div>
+            <div class="discription">
+              <p>Skills</p>
+              <ul>
+                <li>Expert knowledge of responsive design, media queries, and mobile CSS frameworks.</li>
+                <li>Good analytical and problem-solving skills.</li>
+                <li>Strong proficiency in React (hooks knowledge is plus)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <conatctus-component></conatctus-component>
+
+    <footer-component></footer-component>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered job_modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-x"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="apply_form">
+              <form>
+                <h4>Apply Here</h4>
+                <div class="form_field">
+                  <label>Name:</label>
+                  <input type="text" name="name">
+                </div>
+                <div class="form_field">
+                  <label>Email:</label>
+                  <input type="text" name="email">
+                </div>
+                <div class="form_field">
+                  <label>
+                    <span id="resume">Upload Resume</span>
+                  <input type="file" onchange="document.getElementById('resume').innerHTML= this.value" name="resume">
+                  </label>
+                </div>
+                <div class="form_field">
+                  <button class="button_animate">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
