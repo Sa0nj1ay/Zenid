@@ -11,7 +11,6 @@ body { background:black !important; }
 .menu-wrap {display: none;}
 .menu-button {display: none;}
 button#open-button {display: none; }
-.active {color: #E0AE2C; }
 /*------------------------------------ Header ---------------------------------*/
 
 .header {float: left; width: 100%; background: black; padding: 15px 0; position:relative; }
@@ -25,7 +24,8 @@ button#open-button {display: none; }
 .header-m .header-m-cntr ul { padding:0; margin:0; }
 .header-m .header-m-cntr ul li {display: inline-block; padding: 0 20px; font-size:18px }
 .header-m .header-m-cntr ul li a { color:#FFFFFF80; text-decoration:none; transition:.4s ease }
-.header-m .header-m-cntr ul li a:hover { color:#f4b922 !important; cursor: pointer; }
+.header-m .header-m-cntr ul li a:hover { color:#f4b922 ; cursor: pointer; }
+.header-m .header-m-cntr ul li a.active {color: #E0AE2C; }
 .header-m-rght button {color: #000; cursor:pointer; transition:800ms ease all; outline:none; font-size: 17px;position:relative; transition: .4s ease; border: 1px solid transparent; font-weight: 600; border-style: solid; border-width: 1px 1px 1px 1px; background-color: #E0AE26; padding: 10px 20px; margin: 0px 0px 0px 0px; } /*.header-m-rght button:hover { background:transparent; border:1px solid #E0AE26; color:#fff }*/
 .header-m-rght  button:hover{background:#000; color:#fff; }
 .header-m-rght  button:before,.header-m-rght  button:after{content:''; position:absolute; top:0; right:0; height:2px; width:0; background: #E0AE26; transition:400ms ease all; }
@@ -335,7 +335,6 @@ body {
 .about-ceo-m-btn button {background: #000; border: none; transition: .4s ease; font-size: 15px; border: 1px solid #E0AE26; padding: 10px 20px; font-weight: 600; color: #fff; }
 .about-ceo-m-btn button:hover { background:#E0AE26; }
 .about-ceo-m-txt {float: left; width: 100%;padding-top: 35px; }
-
 /*------------------------------------ about-cntt  ---------------------------------*/
 
 .about-cntt {float: left; width: 100%; background: black;}
