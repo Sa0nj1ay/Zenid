@@ -26,7 +26,7 @@
     })(jQuery);
     // Responsive Navbar JS End
 
-
+      
 
 	    	    $(function () {
 			        var current = window.location.href;
