@@ -26,7 +26,7 @@
     })(jQuery);
     // Responsive Navbar JS End
 
-
+      
 
 	    	    $(function () {
 			        var current = window.location.href;
@@ -40,7 +40,11 @@
 
 // Header Nav End
 
-
+$(".header-m .header-m-cntr ul li a").hover(function(){
+  $(".header-m .header-m-cntr ul li a.active").css("color","#FFFFFF80");
+},function(){
+  $(".header-m .header-m-cntr ul li a.active").css("color","#E0AE2C");
+})
 
 
 });
