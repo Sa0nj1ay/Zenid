@@ -11,7 +11,7 @@ body { background:black !important; }
 .menu-wrap {display: none;}
 .menu-button {display: none;}
 button#open-button {display: none; }
-.active {color: #E0AE2C!important; }
+.active {color: #E0AE2C; }
 /*------------------------------------ Header ---------------------------------*/
 
 .header {float: left; width: 100%; background: black; padding: 15px 0; position:relative; }
